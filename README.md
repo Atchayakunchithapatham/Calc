@@ -43,7 +43,6 @@ Publish the website in the given URL.
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  background-colour:black;
 }
 
 #display {
@@ -54,7 +53,7 @@ Publish the website in the given URL.
   border: 1px solid black;
   border-radius: 5px;
   height: 4cm;
-  background-colour: #fadbd5;
+  background-color: #fadbd5;
   
 }
 
@@ -123,9 +122,9 @@ Publish the website in the given URL.
     <input type="text" id="display" readonly>
     <div class="keys">
       <button onclick="clearDisplay()">C</button>
-      <button onclick="appendToDisplay('log('))">log</button>
-      <button onclick="backspace()">⌫</button>
-      <button onclick="appendToDisplay('sqrt('))">√</button>
+      <button onclick="appendToDisplay('log')">log</button>
+      <button onclick="backspace()">&larr;</button>
+      <button onclick="appendToDisplay('sqrt')">&radic;</button>
       <button onclick="appendToDisplay('7')">7</button>
       <button onclick="appendToDisplay('8')">8</button>
       <button onclick="appendToDisplay('9')">9</button>
@@ -148,9 +147,10 @@ Publish the website in the given URL.
   <script>
     let display = document.getElementById('display');
 
-    function appendToDisplay(value) {
+      function appendToDisplay(value) {
       display.value += value;
     }
+    
 
     function clearDisplay() {
       display.value = '';
