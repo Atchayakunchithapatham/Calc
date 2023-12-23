@@ -174,8 +174,9 @@ Publish the website in the given URL.
 ```
 
 ## OUTPUT:
-![Alt text](<Screenshot (45).png>)
 ![Alt text](screenshot45.png)
+![Alt text](<Screenshot (45).png>)
+
 
 
 ## RESULT:
